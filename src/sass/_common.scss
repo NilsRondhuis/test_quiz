@@ -1,0 +1,12 @@
+@import "~node_modules/modern-normalize/modern-normalize.css";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.section {
+  padding: 15px 0;
+}
+
+@include media-breakpoint-up(md) {
+  .container {
+    width: 600px;
+  }
+}

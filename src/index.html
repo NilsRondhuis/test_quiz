@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page title</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <div
+          id="carouselExampleFade"
+          class="carousel slide carousel-fade js-carousel-container"
+          data-bs-wrap="false"
+        >
+          <div class="carousel-inner js-carousel-inner"></div>
+
+          <div class="btn-box">
+            <button
+              class="btn btn-light me-4 js-back-btn"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="prev"
+            >
+              Back
+            </button>
+            <button
+              class="btn btn-primary js-next-btn"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="next"
+            >
+              Next
+            </button>
+          </div>
+
+          <div class="page-count-box position-absolute">
+            <span class="current-page js-current-page"></span>
+            <span class="all-pages js-all-pages"></span>
+          </div>
+        </div>
+
+        <div class="box-form p-3 rounded-2 d-none js-box-form">
+          <form id="form" novalidate>
+            <div class="mb-3">
+              <label for="input-fname" class="form-label">First Name</label>
+              <input
+                id="input-fname"
+                type="text"
+                name="fname"
+                class="form-control"
+                aria-label="First name"
+                pattern="[A-Za-zА-Яа-я]{3,}"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="input-lname" class="form-label">Last Name</label>
+              <input
+                id="input-lname"
+                type="text"
+                name="lname"
+                class="form-control"
+                aria-label="Last name"
+                pattern="[A-Za-zА-Яа-я]{3,}"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="input-email" class="form-label">Email address</label>
+              <input
+                id="input-email"
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="name@example.com"
+                required
+              />
+            </div>
+            <div class="mb-3 d-flex flex-column">
+              <label for="input-phone" class="form-label">Phone</label>
+              <input
+                id="input-phone"
+                type="tel"
+                name="phone"
+                class="form-control"
+                aria-label="Phone"
+                pattern="^\+380\d{9}$"
+                required
+              />
+            </div>
+            <input
+              type="hidden"
+              name="hidden"
+              id="answers"
+              class="js-input-hidden"
+            />
+            <button type="submit" class="btn btn-primary">
+              Submit answers
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
