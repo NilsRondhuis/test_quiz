@@ -6,8 +6,6 @@ import "./js/common/refs";
 import "./js/markup/createQuestions";
 import "./js/common/changePage";
 import "./js/card";
-import "./js/form/jqueryValidation";
-import "./js/form/formSubmit";
 import "./js/form/intTelInput";
 import "./js/form/maskPlugin";
 import "./js/form/formSubmit";
